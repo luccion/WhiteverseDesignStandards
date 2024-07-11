@@ -1,0 +1,96 @@
+#DocNavigator {
+  position: -webkit-sticky;
+  position: sticky;
+  overflow-y: auto;
+  top: 5rem;
+  display: block !important;
+  height: calc(100vh - 6rem);
+}
+#DocNavigator > ul {
+  padding-left: 1rem;
+}
+#DocNavigator > ul > li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.doc-nav {
+  color: #000;
+  text-decoration: none;
+  padding: 4px;
+}
+.doc-nav:hover {
+  font-weight: bold;
+  background-color: #bdc8f2;
+  border-radius: 0.5rem;
+}
+.doc-nav:active {
+  background-color: #bdc8f2;
+  border-radius: 0.5rem;
+}
+.doc-nav-i {
+  font-weight: bold;
+}
+.doc-nav-ii {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.doc-nav-iii {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.doc-nav-iiii {
+  padding-left: 2.2rem;
+  padding-right: 2rem;
+}
+.doc-nav-iiiii {
+  padding-left: 2.4rem;
+  padding-right: 2rem;
+}
+#DocContent > p > a {
+  color: #5e4ab6;
+  text-decoration: none;
+}
+#DocContent > h1:not(:first-of-type) {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+#DocContent > h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#DocContent > h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#DocContent > * > a.header-link {
+  text-decoration: none;
+  color: #000;
+}
+#DocContent > * > a.header-link:hover::after {
+  content: "\23";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 2rem;
+  color: #bdc8f2;
+}
+#DocContent > h3 > a.header-link:hover::after {
+  content: "\23";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #bdc8f2;
+}
+
+.clickable-image {
+  max-width: 300px;
+  transition: max-width 0.3s ease;
+}
+
+.footer {
+  font-family: "Courier New", Courier, monospace;
+  color: #0000005e;
+}
