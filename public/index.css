@@ -1,3 +1,15 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0rem 0.5rem 1rem 0rem #0000006e, -1rem -1rem 3rem 0rem #ffffff3a;
+  border-bottom-left-radius: 25% 240%;
+  justify-content: flex-end;
+  max-width: 25rem;
+  flex-wrap: nowrap;
+  margin-right: 0rem;
+  margin-left: auto;
+}
 #DocNavigator {
   position: -webkit-sticky;
   position: sticky;
@@ -71,15 +83,15 @@
   color: #000;
 }
 #DocContent > * > a.header-link:hover::after {
-  content: "\23";
-  font-family: "Font Awesome 6 Free";
+  content: '\23';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 900;
   font-size: 2rem;
   color: #bdc8f2;
 }
 #DocContent > h3 > a.header-link:hover::after {
-  content: "\23";
-  font-family: "Font Awesome 6 Free";
+  content: '\23';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 900;
   font-size: 1.5rem;
   color: #bdc8f2;
@@ -91,6 +103,19 @@
 }
 
 .footer {
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   color: #0000005e;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  color: #0000005e;
+}
+pre {
+  padding: 1rem;
+}
+
+td {
+  min-width: 3rem;
+  text-align: start;
 }

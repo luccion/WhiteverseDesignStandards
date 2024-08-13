@@ -4,29 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whiteverse Design Standards</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div id="documentation" class="mt-5 d-flex flex-column align-items-center">
-      <div class="row">
-        <nav id="DocNavigator" class="col-2"></nav>
-        <div
-          id="DocContent"
-          class="col-8"
-          data-bs-spy="scroll"
-          data-bs-target="#DocNavigator"
-          data-bs-smooth-scroll="true"
-        ></div>
+    <nav class="navbar bg-body-tertiary sticky-top shadow" style="padding-right: 0px; margin-right: 0px">
+      <div class="container-fluid">
+        <a class="navbar-brand" id="navTitle"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">三</button>
+        <div class="offcanvas offcanvas-end show" id="offcanvasNavbar" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" aria-labelledby="offcanvasNavbarLabel" aria-modal="true" role="dialog">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column" id="DocNavigator"></div>
+        </div>
       </div>
-      <div class="footer my-5">
-        Whiteverse Design Standards Instruction Document<br />
-        Whiteverse Culture Creativity Co., Ltd. © 2024<br />
-        Designed by Lunch
-      </div>
+    </nav>
+    <div id="DocContent" class="p-3" data-bs-spy="scroll" data-bs-target="#DocNavigator" data-bs-smooth-scroll="true"></div>
+    <div class="footer my-5">
+      Whiteverse Design Standards Instruction Document<br />
+      Whiteverse Culture Creativity Co., Ltd. © 2024<br />
+      Designed by Lunch
     </div>
     <script src="https://cdn.jsdelivr.net/npm/marked@13.0.2/lib/marked.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
