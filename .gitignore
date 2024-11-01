@@ -1,0 +1,5 @@
+/Preprocessing/Data
+/Preprocessing/Outputs
+/node_modules/
+/node_modules/*
+/.vscode/
